@@ -50,7 +50,7 @@ var html =
 "<h1> Guess made: " + storeguess + "  " + "</h1>";
 
 document.querySelector("#guessmade").innerHTML = html;
-        storeguess.push(event.key)
+        
 }
     
  
