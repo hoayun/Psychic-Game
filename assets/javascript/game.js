@@ -3,7 +3,7 @@ var ranletter = letters[Math.floor(Math.random()*letters.length)];
 console.log(ranletter);
 
 
-
+//VARIABLES HERE
     var winstext = document.getElementById("wins-text");
     var maxlosses = document.getElementById("losses");
     var maxguess = document.getElementById("guessleft");
@@ -21,7 +21,7 @@ console.log(storeguess)
 document.onkeyup = function(event) {
 
 var userkey = event.key;
-
+//IF USER GUESSES CORRECTLY
 if (userkey === ranletter){
     console.log("win");
     wins++;
@@ -32,7 +32,7 @@ if (userkey === ranletter){
     console.log(ranletter);
 }
 
-
+//IF USER GUESSES INCORRECTLY
 else {guessleft--;
     storeguess.push(event.key) 
     document
@@ -51,7 +51,7 @@ console.log(ranletter);
     }
 
 
-
+//GUESSES MADE ARRAY
 var html =
 "<h1> Guess made: " + storeguess + "  " + "</h1>";
 
