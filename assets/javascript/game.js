@@ -21,12 +21,16 @@ console.log(storeguess)
 document.onkeyup = function(event) {
 
 var userkey = event.key;
+
 if (userkey === ranletter){
     console.log("win");
     wins++;
     guessleft = 10;
     storeguess = []
-    winstext.textContent = "wins: " + wins;}
+    winstext.textContent = "wins: " + wins;
+    ranletter = letters[Math.floor(Math.random()*letters.length)];
+    console.log(ranletter);
+}
 
 
 else {guessleft--;
@@ -42,6 +46,8 @@ else {guessleft--;
         losses++;
         maxlosses.textContent = "losses: " + losses;
         storeguess = [];
+         ranletter = letters[Math.floor(Math.random()*letters.length)];
+console.log(ranletter);
     }
 
 
